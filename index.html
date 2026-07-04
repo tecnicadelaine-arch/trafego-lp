@@ -323,6 +323,28 @@ footer{background:#160f0c;color:#8a7e70;text-align:center;font-size:11.5px;paddi
   .ord-row .amt{font-size:13px}
   .badge-clients{right:10px}
 }
+
+/* ---- mobile image tuning ---- */
+@media(max-width:900px){
+  .diag-photo{min-height:0;aspect-ratio:4/3}
+  .diag-photo img{object-position:center}
+}
+@media(max-width:600px){
+  .scard img{aspect-ratio:auto;height:auto;object-fit:contain}
+  .diag-photo{min-height:0;aspect-ratio:4/3}
+  .fbadge{font-size:11px;padding:5px 9px}
+  .fb2{left:22px}
+  .fb-dollar{width:44px;height:44px;font-size:18px;bottom:14px;right:12px}
+  .mcard .illus{width:100%;display:flex;justify-content:center;margin-bottom:4px}
+  .mcard .illus img{width:150px}
+  .teach-photo{max-width:320px;margin:0 auto}
+  .deps-platform{padding:22px 14px;gap:18px}
+  .bcard .illus2{height:auto;padding:6px 0}
+}
+@media(max-width:420px){
+  .diag-2x2{gap:9px}
+  .mcard .illus img{width:130px}
+}
 </style>
 </head>
 <body>
