@@ -360,6 +360,24 @@ footer{background:#160f0c;color:#8a7e70;text-align:center;font-size:11.5px;paddi
 /* ---- destaque do subtitulo do hero ---- */
 .hero .hero-sub{font-family:'Fraunces','Playfair Display',Georgia,serif;font-size:clamp(19px,2.7vw,27px);line-height:1.28;color:var(--ink);font-weight:600;max-width:540px;margin-bottom:18px}
 @media(max-width:600px){.hero .hero-sub{font-size:clamp(19px,5.4vw,24px)}}
+
+/* restored: guarantee + FAQ + final CTA + bonus intro */
+.guar-ed{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;background:linear-gradient(150deg,#2a1c16,#1a110d);border-radius:24px;padding:42px 46px;color:#efe6dd;box-shadow:0 26px 56px rgba(30,15,8,.3)}
+.guar-ed .gnum{font-family:'Playfair Display',serif;font-weight:800;font-size:104px;line-height:.8;text-align:center;flex:0 0 auto;color:var(--orange)}
+.guar-ed .gnum span{display:block;font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:8px;color:#c9a06f}
+.guar-ed h3{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:clamp(22px,3vw,30px);margin-bottom:12px;color:#fff}
+.guar-ed p{font-size:15.5px;line-height:1.6;color:#d8cabb;max-width:640px}
+.faq-ed{max-width:720px;margin:0 auto}
+.fq{background:#fdf3ea;border:1px solid #f0d9c4;border-radius:12px;margin-bottom:12px;overflow:hidden}
+.fq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:15px;color:var(--ink);display:flex;justify-content:space-between;gap:16px;align-items:center}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::after{content:"\2304";color:var(--orange);font-size:22px;line-height:.7;transition:transform .2s;flex:0 0 auto}
+.fq[open] summary::after{transform:rotate(180deg)}
+.fq .fq-a{padding:2px 22px 18px;color:#6b6058;font-size:14px;line-height:1.55}
+.final-ed{text-align:center}
+.final-ed h2{font-family:'Playfair Display',serif;font-weight:800;color:var(--ink);font-size:clamp(28px,4.4vw,44px);line-height:1.15;margin-bottom:18px}
+.final-ed .l{color:var(--muted);max-width:560px;margin:0 auto 28px;font-size:16px}
+@media(max-width:760px){.guar-ed{grid-template-columns:1fr;text-align:center;justify-items:center}}
 </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -579,7 +597,7 @@ src="https://www.facebook.com/tr?id=1414822459975494&ev=PageView&noscript=1"
 <!-- BONUS -->
 <section class="sec sec-cream">
   <div class="wrap">
-    <h2 class="disp serif center" style="margin-bottom:38px">Aulas bônus exclusivas</h2>
+    <h2 class="disp serif center" style="margin-bottom:14px">Aulas bônus exclusivas</h2><p class="learn-sub" style="margin:0 auto 34px">Além do treinamento principal, você recebe dois bônus para potencializar os resultados dos seus anúncios.</p>
     <div class="bonus-cards">
       <div class="bcard">
         <div class="bic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" ><path d="M12 2l2.4 1.8 3-.2 1 2.8 2.6 1.5-.7 2.9 1.5 2.6-2.2 2 -.5 3-3 .5-1.8 2.4-2.8-1-2.8 1-1.8-2.4-3-.5-.5-3-2.2-2 1.5-2.6-.7-2.9 2.6-1.5 1-2.8 3 .2z"/><path d="M8.5 12.5l2.3 2.3 4.7-4.8" stroke-width="2.2"/></svg></div>
@@ -742,6 +760,35 @@ src="https://www.facebook.com/tr?id=1414822459975494&ev=PageView&noscript=1"
     </div>
   </div>
 </section>
+
+<!-- GUARANTEE -->
+<section class="sec sec-beige"><div class="wrap"><div class="guar-ed">
+  <div class="gnum">7<span>dias de garantia</span></div>
+  <div><h3>Teste por 7 dias sem risco.</h3><p>Assista. Implemente. Veja se o método faz sentido para você. Se concluir que não é o que procura, basta solicitar o reembolso. Sem burocracia. Sem perguntas.</p></div>
+</div></div></section>
+
+<!-- FAQ -->
+<section class="sec sec-cream"><div class="wrap">
+  <h2 class="disp serif center" style="font-style:italic;margin-bottom:34px">Perguntas frequentes</h2>
+  <div class="faq-ed">
+      <details class="fq"><summary>Nunca anunciei. Esse treinamento é para mim?</summary><div class="fq-a">Sim. O Tráfego Pago para Negócios foi desenvolvido justamente para quem está começando. Você aprenderá o passo a passo para criar sua primeira campanha de anúncios, mesmo sem experiência com anúncios.</div></details>
+      <details class="fq"><summary>Vou aprender apenas Tráfego Pago?</summary><div class="fq-a">O foco principal do treinamento é ensinar você a criar campanhas que geram clientes para o seu negócio. Além disso, você recebe duas aulas bônus sobre posicionamento e oferta para potencializar os resultados dos seus anúncios.</div></details>
+      <details class="fq"><summary>Funciona para o meu nicho?</summary><div class="fq-a">Sim. O método pode ser aplicado por profissionais, prestadores de serviço e pequenos negócios que desejam atrair clientes pela internet. Os princípios ensinados funcionam independentemente do nicho.</div></details>
+      <details class="fq"><summary>Quanto preciso investir em anúncios?</summary><div class="fq-a">Você pode começar investindo pouco enquanto aprende. O treinamento foi estruturado para que você valide suas campanhas com segurança antes de aumentar o investimento.</div></details>
+      <details class="fq"><summary>Quanto tempo leva para aprender?</summary><div class="fq-a">O treinamento foi desenvolvido para ser direto ao ponto. Em cerca de duas horas você aprenderá o passo a passo para criar seus primeiros anúncios.</div></details>
+      <details class="fq"><summary>Já anunciei e não tive resultado. Vale a pena para mim?</summary><div class="fq-a">Sim. Muitos empresários acreditam que o problema é o tráfego pago, quando na verdade está na forma como as campanhas são criadas. Você aprenderá um processo simples e estratégico para evitar os erros mais comuns.</div></details>
+      <details class="fq"><summary>Preciso contratar uma agência depois?</summary><div class="fq-a">Não. O objetivo do treinamento é justamente ensinar você a criar, gerenciar e otimizar suas próprias campanhas, sem depender de terceiros.</div></details>
+      <details class="fq"><summary>Em quanto tempo consigo colocar minha campanha no ar?</summary><div class="fq-a">Como o treinamento é totalmente prático, muitos alunos conseguem criar sua primeira campanha logo após assistir às aulas e seguir o passo a passo.</div></details>
+      <details class="fq"><summary>E se eu não gostar?</summary><div class="fq-a">Você tem 7 dias de garantia incondicional. Se concluir que o treinamento não faz sentido para você, basta solicitar o reembolso dentro desse período.</div></details>
+      </div>
+</div></section>
+
+<!-- FINAL CTA -->
+<section class="sec sec-beige final-ed"><div class="wrap">
+  <h2>Pare de depender de indicação <span style="color:var(--orange)">para conseguir clientes.</span></h2>
+  <p class="l">Em apenas 2 horas, você aprende o processo que faz o tráfego pago realmente funcionar — mesmo que nunca tenha anunciado antes.</p>
+  <a href="https://payfast.greenn.com.br/erksgse" class="btn">Quero começar agora</a>
+</div></section>
 
 <footer>Tr&#225;fego Pago para Neg&#243;cios &#183; Todos os direitos reservados.</footer>
 </body>
